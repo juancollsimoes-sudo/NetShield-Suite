@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NetShield Suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="sidebar">
+        <h2>NETSHIELD</h2>
+        <div class="nav-item active" onclick="showSection('recon')">Reconocimiento</div>
+        <div class="nav-item" onclick="showSection('audit')">Auditoría Web</div>
+        <div class="nav-item" onclick="showSection('settings')">Configuración</div>
+    </nav>
+
+    <main id="main-content">
+        <div id="recon-section">
+            <h1 style="color: var(--accent)">Escáner de Puertos</h1>
+            <div class="card">
+                <input type="text" id="target" placeholder="IP o Dominio (ej: 127.0.0.1)"
+                    style="padding: 10px; width: 60%; border-radius: 4px; border: none;">
+                <button onclick="startScan()"
+                    style="padding: 10px 20px; background: var(--accent); border: none; cursor: pointer; font-weight: bold;">
+                    INICIAR ESCANEO
+                </button>
+            </div>
+
+            <div class="console-output" id="output">
+                [SYSTEM] NetShield Suite listo. Esperando objetivo...
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

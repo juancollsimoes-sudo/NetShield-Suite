@@ -1,0 +1,81 @@
+:root {
+    --bg-dark: #0f172a;
+    --bg-sidebar: #1e293b;
+    --accent: #38bdf8;
+    --accent-glow: rgba(56, 189, 248, 0.4);
+    --text-main: #f8fafc;
+    --text-dim: #94a3b8;
+    --danger: #ef4444;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 240px;
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+#sidebar h2 {
+    color: var(--accent);
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.nav-item {
+    padding: 15px 25px;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--accent);
+    background: rgba(56, 189, 248, 0.05);
+    border-left: 3px solid var(--accent);
+}
+
+/* Main Content */
+#main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.console-output {
+    background: #000;
+    color: #10b981;
+    /* Verde Matrix */
+    font-family: 'Consolas', monospace;
+    padding: 15px;
+    border-radius: 5px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-top: 20px;
+    border: 1px solid #10b981;
+}
