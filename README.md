@@ -70,7 +70,7 @@ Puedes elegir entre correr el software desde su c√≥digo fuente virgen, o a trav√
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/NetShield-Suite.git
+   git clone https://github.com/juancollsimoes-sudo/NetShield-Suite.git
    cd NetShield-Suite
    ```
 
