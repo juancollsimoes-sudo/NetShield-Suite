@@ -108,7 +108,7 @@ Si realizas tus modificaciones y deseas empacarlo para entregar la Suite sola co
 NetShield es tan sencillo como encender y auditar. Al iniciar, el usuario debe leer y aceptar los Términos de Uso Ético Internacionales y de la CMAA.
 
 Dentro de las pestañas encontrarás:
-1.  **Reconocimiento:** Introduce una IP (ej: `192.168.1.1` o `127.0.0.1`) o un dominio de red. Selecciona el perfil del nivel de alerta y da a Iniciar. Si la red es Pública y detecta puertos peligrosos, lanzará una alerta roja estroboscópica.
+1.  **Reconocimiento:** Introduce una IP (ej: `199.170.1.1` o `177.5.9.1`) o un dominio de red. Selecciona el perfil del nivel de alerta y da a Iniciar. Si la red es Pública y detecta puertos peligrosos, lanzará una alerta roja estroboscópica.
 2.  **Auditoria Web:** Pega cualquier URL con su esquema Http/Https, activa el toggle Switch the *Rotación de Proxy IP*, para enmascarar tu propio host hacia el objetivo, e inspeciona el backend.
 3.  **Local Health:** Evalúa con un solo click los componentes core del SO Windows donde te encuentras sentado trabajando, verificando que tu equipo esté apto.
 
