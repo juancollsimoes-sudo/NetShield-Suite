@@ -17,8 +17,6 @@
   <a href="#notas-legales">Notas Legales</a>
 </p>
 
-![Screenshot of the App](C:\Users\andre\.gemini\antigravity\brain\c3d6b707-4713-425f-b444-d6d080b37ac6\netshield_screenshot_1773631390839.png)
-
 ## Características Principales
 
 NetShield Suite no es solo un escáner, es un *framework* compacto de ciberseguridad con capacidades profesionales integradas en una sola aplicación ejecutable (.exe).
