@@ -1,15 +1,45 @@
 :root {
-    --bg-dark: #0f172a;
+    /* Tema Intermedio (Por defecto - El original) */
+    --bg-main: #0f172a;
     --bg-sidebar: #1e293b;
+    --bg-card: rgba(30, 41, 59, 0.5);
     --accent: #38bdf8;
     --accent-glow: rgba(56, 189, 248, 0.4);
     --text-main: #f8fafc;
     --text-dim: #94a3b8;
     --danger: #ef4444;
+    --border-color: #334155;
+    --console-bg: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-main: #000000;
+    --bg-sidebar: #0a0a0a;
+    --bg-card: rgba(15, 15, 15, 0.8);
+    --accent: #10b981; /* Verde Hacker */
+    --accent-glow: rgba(16, 185, 129, 0.4);
+    --text-main: #ffffff;
+    --text-dim: #6b7280;
+    --danger: #dc2626;
+    --border-color: #262626;
+    --console-bg: #050505;
+}
+
+[data-theme="light"] {
+    --bg-main: #f1f5f9;
+    --bg-sidebar: #ffffff;
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --accent: #0284c7;
+    --accent-glow: rgba(2, 132, 199, 0.3);
+    --text-main: #0f172a;
+    --text-dim: #475569;
+    --danger: #ef4444;
+    --border-color: #cbd5e1;
+    --console-bg: #1e293b;
 }
 
 body {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-main);
     color: var(--text-main);
     font-family: 'Segoe UI', Roboto, sans-serif;
     margin: 0;
@@ -60,15 +90,15 @@ body {
 }
 
 .card {
-    background: rgba(30, 41, 59, 0.5);
-    border: 1px solid #334155;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .console-output {
-    background: #000;
+    background: var(--console-bg);
     color: #10b981;
     /* Verde Matrix */
     font-family: 'Consolas', monospace;
@@ -78,4 +108,61 @@ body {
     overflow-y: scroll;
     margin-top: 20px;
     border: 1px solid #10b981;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+.modal-content {
+    background: var(--bg-sidebar);
+    border: 1px solid var(--danger);
+    border-radius: 8px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+    text-align: justify;
+}
+
+.modal-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: var(--danger);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal-btn:hover {
+    background: #dc2626;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+    }
 }

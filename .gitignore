@@ -1,0 +1,19 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build and dist folders
+build/
+# You can uncomment 'dist/' if you don't want to track the .exe file
+# dist/
+*.spec
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+.venv/
